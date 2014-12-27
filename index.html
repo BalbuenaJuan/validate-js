@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validate</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form class="form" id="form" method="post" action="email">
+        <input class="block input" type="text" id="name" name="Nombre" placeholder="Name" required>
+        <input class="block input" name="email" id="email" type="email" placeholder="Email" required/>
+        <br>
+        <label for="range">Prize:</label>
+        <input type="range" name="prize" required id="range" min="500" max="2500">
+        <div id="count"></div>
+        <textarea class="block input" id="message" name="Message" cols="30" rows="10"  required placeholder="Write here"></textarea>
+        <br>
+        <input id="submit" class="submit" type="submit" value="Submit">
+    </form>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="form_validate.js"></script>
+</body>
+</html>
