@@ -1,4 +1,4 @@
 validate-js
 ===========
 
-A simple visual form validation
+A simple validation visual for forms
