@@ -46,7 +46,7 @@ $(document).ready(function(){
 			$("#name").css({"background": "#FFCECF",
 				"border": "2px solid #FF726C"});
 			$(".ok3").remove();
-			$("#mensaje").focusout($(".cancel3").remove());
+			$("#name").focusout($(".cancel3").remove());
 			$("#name").after('<img class="cancel3" src="img/cancel.png" width="28" height="28">');
 			$("#name").attr("placeholder", "You must write your name");
 		}
@@ -54,7 +54,7 @@ $(document).ready(function(){
 			$("#name").css({"background": "#C8FDD4",
 				"border": "2px solid #52FD8B"});
 			$(".cancel3").remove();
-			$("#mensaje").focusout($(".ok3").remove());
+			$("#name").focusout($(".ok3").remove());
 			$("#name").after('<img class="ok3" src="img/check.png" width="28" height="28">');
 		}
 	});
