@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Validate</title>
-	<link rel="stylesheet" href="css/style.css">
+<html>
+    <meta charset="UTF-8">
+    <title>Validate-js</title>
+    <link href='//fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
 </head>
 <body>
-	<form class="form" id="form" method="post" action="email">
-        <input class="block input" type="text" id="name" name="Nombre" placeholder="Name" required>
-        <input class="block input" name="email" id="email" type="email" placeholder="Email" required/>
-        <br>
-        <label for="range">Prize:</label>
-        <input type="range" name="prize" required id="range" min="500" max="2500">
-        <div id="count"></div>
-        <textarea class="block input" id="message" name="Message" cols="30" rows="10"  required placeholder="Write here"></textarea>
-        <br>
-        <input id="submit" class="submit" type="submit" value="Submit">
-    </form>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/form_validate.min.js"></script>
+    <section>
+        <header  class="licencia">
+        <figure><img  class="commons" src="img/creative-commons.png" alt="licencia-creative-commons"/><figcaption class="figcaption">License creative commons</figcaption></figure>
+        </header>
+        <h1 class="header">Validate.js</h1>
+        <div class="formulario">
+        <form class="form" action="#">
+            <input class="input" type="text" id="name" name="Nombre" placeholder="Name" required>
+            <input class="input" name="email" id="email" type="email" placeholder="Email" required/>
+            <br>
+            <label for="range">Price:</label>
+            <input type="range" name="prize" class="range" required id="range" min="500" max="2500">
+            <div id="count"></div>
+            <textarea class="block input" id="message" name="Message" cols="30" rows="10"  required placeholder="Write here"></textarea>
+        </form>
+        </div>
+            <article class="text-header">
+            <h2>A Simple validation visual for forms:</h2>
+            <h3>Easy plugin to validation visual for forms. Fork on GitHub or download the latest version.</h3>
+            <p><a href="//github.com/JuanBalbuenaGonalez/validate-js">GitHub</a></p>
+        </article>
+        <article>
+            <h3>Contact me:</h3>
+            <a href="mailto:hola@juanbalbuena.es">hola@juanbalbuena.es</a>
+        </article>
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/form_validate.js"></script>
 </body>
 </html>
