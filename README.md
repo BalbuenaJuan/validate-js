@@ -6,4 +6,4 @@ A simple validation visual for forms
 License
 =======
 
-Craetive commons
+Creative commons
