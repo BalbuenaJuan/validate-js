@@ -23,7 +23,7 @@ Create a div with id: "count" to represent the value of id: "range".
 License
 =======
 
-Creative commons
+MIT
 
 Demo
 ====
