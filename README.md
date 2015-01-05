@@ -9,8 +9,11 @@ How to use
 Instructions to use the plugin:
 
 -Call the input text for name with id: "name".
+
 -Call the input text for email with id: "email".
+
 -Call the textarea for message with id: "message".
+
 -Call the input (range) for price with id: "range".
 
 -----------------------------------------------------------
