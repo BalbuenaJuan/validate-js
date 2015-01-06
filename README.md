@@ -20,6 +20,11 @@ Instructions to use the plugin:
 
 Create a div with id: "count" to represent the value of id: "range".
 
+Requirements
+============
+
+jQuery 1.1
+
 License
 =======
 
