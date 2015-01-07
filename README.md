@@ -23,7 +23,7 @@ Create a div with id: "count" to represent the value of id: "range".
 Requirements
 ============
 
-jQuery 1.1
+jQuery 1.11.1
 
 License
 =======
