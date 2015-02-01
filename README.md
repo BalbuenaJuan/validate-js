@@ -33,4 +33,4 @@ MIT
 Demo
 ====
 
-https://www.juanbalbuena.es/validate-js/
+https://www.juanbalbuena.info/validate-js/
