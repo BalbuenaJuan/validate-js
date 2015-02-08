@@ -1,15 +1,15 @@
 .email-fail {
   display: none;
   color: #f00;
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .message-fail {
   display: none;
   color: #f00;
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .text-fail {
   display: none;
   color: #f00;
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
