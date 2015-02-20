@@ -13,8 +13,6 @@ $(document).ready(function(){
 	});
 
     message.on("focusout", function(){
-        if($(this).val() == ""){
-
             for(var i = 0; i < message.length; i++){
                 message.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
@@ -26,24 +24,18 @@ $(document).ready(function(){
                 message.before('<p id="bad-message">! Bad message</p>');
                 $("#bad-message").css({"color": "red",
                     "margin-bottom": "0"});
-            }
         }
         else{
-            for(var i = 0; i < message.length; i++){
                 message.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel1").remove();
                 $("#ok1").remove();
                 message.after('<img id="ok1" src="img/check.png" width="28" height="28">');
                 $("#bad-message").remove();
-
-            }
         }
     });
     email.on("focusout", function(){
         if($(this).val() == "" || $("#email").val().indexOf("@") == -1 || $("#email").val().indexOf(".") == -1){
-
-            for(var i = 0; i < email.length; i++){
                 email.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
                 $("#ok2").remove();
@@ -54,11 +46,9 @@ $(document).ready(function(){
                 email.before('<p id="bad-email">! Bad email</p>');
                 $("#bad-email").css({"color": "red",
                     "margin-bottom": "0"});
-            }
 
         }
         else{
-            for(var i = 0; i < email.length; i++){
                 email.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel2").remove();
@@ -66,13 +56,10 @@ $(document).ready(function(){
                 $("#bad-email").remove();
                 email.after('<img id="ok2" src="img/check.png" width="28" height="28">');
                 $("#bad-email").remove();
-            }
         }
     });
     name.on("focusout", function(){
         if($(this).val() == ""){
-
-            for( var i = 0; i < name.length; i++){
                 name.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
                 $("#ok3").remove();
@@ -83,18 +70,14 @@ $(document).ready(function(){
                 name.before('<p id="bad-name">! Bad name </p>');
                 $("#bad-name").css({"color": "red",
                     "margin-bottom": "0"});
-
-            }
         }
         else{
-            for(var i = 0; i < name.length; i++){
                 name.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel3").remove();
                 $("#ok3").remove();
                 name.after('<img id="ok3" src="img/check.png" width="28" height="28">');
                 $("#bad-name").remove();
-            }
         }
     });
 
