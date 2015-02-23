@@ -13,7 +13,7 @@ $(document).ready(function(){
 	});
 
     message.on("focusout", function(){
-            for(var i = 0; i < message.length; i++){
+        if($(this).val() == ""){
                 message.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
                 $("#ok1").remove();
@@ -46,7 +46,6 @@ $(document).ready(function(){
                 email.before('<p id="bad-email">! Bad email</p>');
                 $("#bad-email").css({"color": "red",
                     "margin-bottom": "0"});
-
         }
         else{
                 email.css({"background": "#C8FDD4",
@@ -72,12 +71,14 @@ $(document).ready(function(){
                     "margin-bottom": "0"});
         }
         else{
+            for(var i = 0; i < name.length; i++){
                 name.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel3").remove();
                 $("#ok3").remove();
                 name.after('<img id="ok3" src="img/check.png" width="28" height="28">');
                 $("#bad-name").remove();
+            }
         }
     });
 
