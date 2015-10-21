@@ -5,7 +5,7 @@ $("textarea").on("focusout", function(){
                 $("#ok1").remove();
                 $("#cancel1").remove();
                 $("#bad-message").remove();
-                $("textarea").after('<img id="cancel1" src="../img/cancel.png" width="28" height="28">');
+                $("textarea").after('<img id="cancel1" src="img/cancel.png" width="28" height="28">');
                 $("textarea").attr("placeholder", "You must write an email");
                 $("textarea").before('<p id="bad-message">! Bad message</p>');
                 $("#bad-message").css({"color": "red",
@@ -16,7 +16,7 @@ $("textarea").on("focusout", function(){
                     "border": "2px solid #52FD8B"});
                 $("#cancel1").remove();
                 $("#ok1").remove();
-                $("textarea").after('<img id="ok1" src="../img/check.png" width="28" height="28">');
+                $("textarea").after('<img id="ok1" src="img/check.png" width="28" height="28">');
                 $("#bad-message").remove();
         }
     });
@@ -27,7 +27,7 @@ $("textarea").on("focusout", function(){
                 $("#ok2").remove();
                 $("#cancel2").remove();
                 $("#bad-email").remove();
-                $("input[type=email]").after('<img id="cancel2" src="../img/cancel.png" width="28" height="28">');
+                $("input[type=email]").after('<img id="cancel2" src="img/cancel.png" width="28" height="28">');
                 $("input[type=email]").attr("placeholder", "You nust write your email");
                 $("input[type=email]").before('<p id="bad-email">! Bad E-mail</p>');
                 $("#bad-email").css({"color": "red",
@@ -39,7 +39,7 @@ $("textarea").on("focusout", function(){
                 $("#cancel2").remove();
                 $("#ok2").remove();
                 $("#bad-email").remove();
-                $("input[type=email]").after('<img id="ok2" src="../img/check.png" width="28" height="28">');
+                $("input[type=email]").after('<img id="ok2" src="img/check.png" width="28" height="28">');
                 $("#bad-email").remove();
         }
     });
@@ -51,7 +51,7 @@ $("textarea").on("focusout", function(){
                 $("#cancel3").remove();
                 $("#bad-name").remove();
                 $("#bonito-nombre").remove();
-                $(":text").after('<img id="cancel3" src="../img/cancel.png" width="28" height="28">');
+                $(":text").after('<img id="cancel3" src="img/cancel.png" width="28" height="28">');
                 $(":text").attr("placeholder", "You must write your name");
                 $(":text").before('<p id="bad-name">! Bad name</p>');
                 $("#bad-name").css({"color": "red",
@@ -65,7 +65,7 @@ $("textarea").on("focusout", function(){
                     "border": "2px solid #52FD8B"});
                 $("#cancel3").remove();
                 $("#ok3").remove();
-                $(":text").after('<img id="ok3" src="../img/check.png" width="28" height="28">');
+                $(":text").after('<img id="ok3" src="img/check.png" width="28" height="28">');
                 $("#bad-name").remove();
         }
     });//FIN VALIDACIÓN VISUAL EMAIL
