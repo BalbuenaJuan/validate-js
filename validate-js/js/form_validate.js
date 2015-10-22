@@ -1,13 +1,18 @@
-$("textarea").on("focusout", function(){
+var area = $("textarea");
+var email = $("input[type=email]");
+
+
+area.on("focusout", function(){
         if($(this).val() == ""){
-                $("textarea").css({"background": "#FFCECF",
+                area.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
+            console.log("Llega?");
                 $("#ok1").remove();
                 $("#cancel1").remove();
                 $("#bad-message").remove();
-                $("textarea").after('<img id="cancel1" src="img/cancel.png" width="28" height="28">');
-                $("textarea").attr("placeholder", "You must write an email");
-                $("textarea").before('<p id="bad-message">! Bad message</p>');
+                area.after('<img id="cancel1" src="img/cancel.png" width="28" height="28">');
+                area.attr("placeholder", "You must write an email");
+                area.before('<p id="bad-message">! Bad message</p>');
                 $("#bad-message").css({"color": "red",
                     "margin-bottom": "0"});
         }
@@ -20,26 +25,26 @@ $("textarea").on("focusout", function(){
                 $("#bad-message").remove();
         }
     });
-    $("input[type=email]").on("focusout", function(){
-        if($(this).val() == "" || $("#email").val().indexOf("@") == -1 || $("#email").val().indexOf(".") == -1){
-                $("input[type=email]").css({"background": "#FFCECF",
+    email.on("focusout", function(){
+        if($(this).val() == "" || email.val().indexOf("@") == -1 || email.val().indexOf(".") == -1){
+                email.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
                 $("#ok2").remove();
                 $("#cancel2").remove();
                 $("#bad-email").remove();
-                $("input[type=email]").after('<img id="cancel2" src="img/cancel.png" width="28" height="28">');
-                $("input[type=email]").attr("placeholder", "You nust write your email");
-                $("input[type=email]").before('<p id="bad-email">! Bad E-mail</p>');
+                email.after('<img id="cancel2" src="img/cancel.png" width="28" height="28">');
+                email.attr("placeholder", "You nust write your email");
+                email.before('<p id="bad-email">! Bad E-mail</p>');
                 $("#bad-email").css({"color": "red",
                     "margin-bottom": "0"});
         }
         else{
-                $("input[type=email]").css({"background": "#C8FDD4",
+                email.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel2").remove();
                 $("#ok2").remove();
                 $("#bad-email").remove();
-                $("input[type=email]").after('<img id="ok2" src="img/check.png" width="28" height="28">');
+                email.after('<img id="ok2" src="img/check.png" width="28" height="28">');
                 $("#bad-email").remove();
         }
     });
