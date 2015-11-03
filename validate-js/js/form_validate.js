@@ -1,5 +1,6 @@
 var area = $("textarea");
-var email = $("input[type=email]");
+var email = $("input[type='email']");
+var text = $(input[type='text']);
 
 
 area.on("focusout", function(){
@@ -48,29 +49,29 @@ area.on("focusout", function(){
                 $("#bad-email").remove();
         }
     });
-    $(":text").on("focusout", function(){
+    text.on("focusout", function(){
         if($(this).val() == ""){
-                $(":text").css({"background": "#FFCECF",
+                text.css({"background": "#FFCECF",
                     "border": "2px solid #FF726C"});
                 $("#ok3").remove();
                 $("#cancel3").remove();
                 $("#bad-name").remove();
                 $("#bonito-nombre").remove();
-                $(":text").after('<img id="cancel3" src="img/cancel.png" width="28" height="28">');
-                $(":text").attr("placeholder", "You must write your name");
-                $(":text").before('<p id="bad-name">! Bad name</p>');
+                text.after('<img id="cancel3" src="img/cancel.png" width="28" height="28">');
+                text.attr("placeholder", "You must write your name");
+                text.before('<p id="bad-name">! Bad name</p>');
                 $("#bad-name").css({"color": "red",
                     "margin-bottom": "0"});
         }
         else{
             $("#bonito-nombre").remove();
-            $(":text").before('<p id="bonito-nombre">Nice name!.</p>');
+            text.before('<p id="bonito-nombre">Nice name!.</p>');
                 $("#bonito-nombre").css({"color": "#52FD8B", "margin-bottom": "0" });
-                $(":text").css({"background": "#C8FDD4",
+                text.css({"background": "#C8FDD4",
                     "border": "2px solid #52FD8B"});
                 $("#cancel3").remove();
                 $("#ok3").remove();
-                $(":text").after('<img id="ok3" src="img/check.png" width="28" height="28">');
+                text.after('<img id="ok3" src="img/check.png" width="28" height="28">');
                 $("#bad-name").remove();
         }
     });//FIN VALIDACIÓN VISUAL EMAIL
